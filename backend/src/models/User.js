@@ -24,6 +24,20 @@ const userSchema = new mongoose.Schema({
     },
     spotifyId: {
         type: String
+    },
+    spotifyAccessToken: {
+        type: String
+    },
+    spotifyRefreshToken: {
+        type: String
+    },
+    favouriteGenres: {
+        type: [String],
+        default: []
+    },
+     topArtists: {
+        type: [String],
+        default: []
     }
 }, { timestamps: true });
 
